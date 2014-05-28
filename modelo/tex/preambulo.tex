@@ -1,0 +1,68 @@
+\documentclass[pnumabnt,normaltoc,capchap,floatnumber=continuous]{abnt}
+\usepackage[bibjustif,abnt-etal-cite=3,abnt-full-initials=yes]{abntcite}
+\usepackage{modelo/tex/uece}
+\usepackage[toc,page]{modelo/tex/appendix}
+\usepackage[portuguese,brazilian,portuges]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{abnt-alf}
+\usepackage{graphicx}
+\usepackage{multicol}
+\usepackage{listings}
+\usepackage{booktabs}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{eucal}
+\usepackage{amssymb}
+\usepackage{mathrsfs}
+\usepackage[order=letter,style=long,acronym,nomain,nonumberlist]{glossaries}
+\usepackage{enumitem}
+\usepackage{pdfpages}
+\usepackage{morefloats}
+\usepackage{alltt}
+\usepackage{float}
+\usepackage{caption}
+\bibliographystyle{abnt-alf}
+
+\usepackage[T1]{fontenc}
+\errorstopmode
+
+\renewcommand{\ABNTbibliographyname}{Referências}
+
+\DeclareCaptionLabelSeparator{dash}{ -- }
+\captionsetup{labelsep=dash}
+
+\hyphenation{com-pu-ta-ção}
+\hyphenation{com-bi-na-tó-ria}
+\hyphenation{fun-cio-na-li-da-de}
+
+\setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{1}
+
+\setlength{\topmargin}{-0.3in}
+
+\local{Fortaleza - Ceará}
+\cidade{Fortaleza}
+\data{data}
+
+% Informações institucionais
+\centro{Centro de Ciências e Tecnologia}
+\curso{Mestrado em Ciência da Computação}
+\cursosimples{Ciência da Computação}
+\instituicao{Universidade Estadual do Ceará}
+\instituicaosigla{UECE}
+\programa{Programa de Pós-Graduação Acadêmica}
+
+
+% Descrição para folha de rosto
+\comentario{
+Proposta de qualificação apresentada ao Curso de Mestrado Acadêmico em Ciência da Computação da Universidade Estadual do Ceará (UECE) como 
+requisito parcial para a defesa de dissertação.
+}
+
+% Descrição um pouco simplificada (removendo o nome do curso ¬¬)
+\comentariosimplificado{
+Proposta de qualificação apresentada ao Curso de Mestrado Acadêmico em Ciência da Computação da Universidade Estadual do Ceará (UECE) como 
+requisito parcial para a defesa de dissertação.
+}
+
+\makeglossaries

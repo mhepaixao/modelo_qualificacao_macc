@@ -1,0 +1,78 @@
+% rubber: onchange qualificacao.acn 'makeglossaries qualificacao'
+% rubber: watch qualificacao.acr
+
+% Modelo de qualificação em LaTeX do Mestrado em Ciência da Computação da UECE por Matheus Paixão
+% baseado no modelo de dissertação por Rudy Matela.
+% Disponível em: https://github.com/mhepaixao/modelo_qualificacao_macc
+
+% Informações para compilação no README.md
+
+\input{modelo/tex/preambulo}
+% insira os siglas no "glossary.tex"
+\input{glossary}
+
+% Informações gerais do documento
+\autor{Nome Sobrenome}
+\autorr{Sobrenome, Nome}
+\titulo{Título da Qualificação}
+\orientador{Nome do seu Orientador}
+%se tiver co-orientador, se não tiver comenta
+%\coorientador{Nome do Seu CoOrientador}
+% \coorientadordois{Nome do Seu Segundo CoOrientador}
+
+% Membros da comissão avaliadora
+\bancaum{Prof. Dr. \ABNTorientadordata\ (Orientador)\\
+Universidade Estadual do Ceará -- UECE}
+
+%se tiver co-orientador
+%\bancadois{Prof. Dr. \ABNTcoorientadordata (Co-Orientador)\\
+%Universidade Estadual do Ceará -- UECE}
+
+%se não tiver co-orientador
+\bancadois{Prof. Dr. Membro da Banca\\
+Universidade de onde vem o Membro -- Sigla}
+
+\bancatres{Prof. Dr. Membro da Banca\\
+Universidade de onde vem o Membro -- Sigla}
+
+% quarto membro da banca, se houver
+%\bancaquatro{Prof. Dr. Membro da Banca\\
+%Universidade de onde vem o Membro -- Sigla}
+
+% data da defesa
+\dataaprovacao{data da defesa}
+
+% Resumo/palavras chaves
+\resumotext{
+Resumo da qualificação
+}
+\pcs{Palavra chave 1}{Palavra chave 2}{Palavra chave 3}
+
+% abstract/keywords
+\abstracttext{
+Abstract
+}
+\kws{Keyword 1}{Keyword 2}{Keyword 3}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% inicio do documento
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+\input{modelo/tex/documento}
+
+% agora adicione os capítulos
+\input{chapters/introducao}
+\input{chapters/revisao_bibliografica}
+
+% bibliografia
+\bibliography{bib.bib}
+
+% caso haja apêndices, use ``\apendice'' antes de inserir
+% as secoes
+%\apendice
+% adicione os apendices, caso existam
+%\input{chapters/apendice1}
+
+\end{document}
+
