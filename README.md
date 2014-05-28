@@ -6,7 +6,7 @@ Modelo de qualificação do Mestrado em Ciência da Computação da Universidade
 Instruções para compilação utilizando ubuntu:
 
 1. Instale os seguintes pacotes do latex na linha de comando:
-    sudo apt-get install texlive texlive-latex-extra texlive-lang-portuguese
+    `sudo apt-get install texlive texlive-latex-extra texlive-lang-portuguese`
 
 2. Instale o rubber na linha de comando:
     sudo apt-get install rubber
