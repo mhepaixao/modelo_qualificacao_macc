@@ -13,7 +13,7 @@ Instruções para compilação utilizando ubuntu:
 
 1 -  Instale os seguintes pacotes do latex na linha de comando:    
 ```sh
-sudo apt-get install texlive texlive-latex-extra texlive-lang-portuguese
+sudo apt-get install texlive texlive-latex-extra texlive-lang-portuguese abntex
 ```
 2 -  Instale o rubber na linha de comando:
 ```sh
