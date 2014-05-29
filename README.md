@@ -27,3 +27,5 @@ rubber --pdf qualificacao.tex`
 Atenção
 ----
 - O modelo é baseado no ABNTEX 0.9 e não vai funcionar no ABNTEX2.
+
+Créditos
